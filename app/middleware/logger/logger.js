@@ -1,12 +1,13 @@
 const log4js = require('log4js');
 const access = require("./access.js");
+
 const methods = ["trace", "debug", "info", "warn", "error", "fatal", "mark"]
 
 const baseInfo = {
   appLogLevel: 'debug',
   dir: 'logs',
   env: 'dev',
-  projectName: 'koa2-tutorial',
+  projectName: 'ucf-node',
   serverIp: '0.0.0.0'
 }
 
@@ -55,6 +56,7 @@ module.exports = (options) => {
 
     await next()
     const responseTime = Date.now() - start;
+    debugger;
     logger.info(access(ctx, {
       responseTime: `响应时间为${responseTime/1000}s`
     }, commonInfo))

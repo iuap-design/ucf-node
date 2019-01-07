@@ -7,7 +7,6 @@ const logger = require("./logger");
  * @returns 
  */
 module.exports = (options) => {
-
   const loggerMiddleware = logger(options)
 
   return (ctx, next) => {

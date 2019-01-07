@@ -17,7 +17,8 @@
     "koa-nunjucks-2": "^3.0.2",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
-    "log4js": "^3.0.6"
+    "log4js": "^3.0.6",
+    "nunjucks": "^3.1.6"
   },
   "directories": {
     "doc": "docs",

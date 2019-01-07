@@ -12,6 +12,7 @@ module.exports = (ctx, message, commonInfo) => {
     host,
     headers
   } = ctx.request;
+  
   const client = {
     method,
     url,
