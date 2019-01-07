@@ -1,6 +1,6 @@
 {
-  "name": "mtl-koa-service",
-  "version": "1.0.0",
+  "name": "ucf-node",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "node app/app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "iuap",
   "license": "ISC",
   "dependencies": {
     "koa": "^2.6.2",
@@ -16,6 +16,7 @@
     "koa-nunjucks-2": "^3.0.2",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
-    "log4js": "^3.0.6"
+    "log4js": "^3.0.6",
+    "logger": "0.0.1"
   }
 }
