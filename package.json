@@ -1,21 +1,35 @@
 {
-  "name": "mtl-koa-service",
+  "name": "ucf-node",
   "version": "1.0.0",
-  "description": "",
+  "description": "Based with Koa 2.x",
   "main": "index.js",
   "scripts": {
     "dev": "node --inspect app/app.js",
     "start": "node app/app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "yonyou fed",
   "license": "ISC",
   "dependencies": {
+    "ip": "^1.1.5",
     "koa": "^2.6.2",
     "koa-bodyparser": "^4.2.1",
     "koa-nunjucks-2": "^3.0.2",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
     "log4js": "^3.0.6"
-  }
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iuap-design/ucf-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iuap-design/ucf-node/issues"
+  },
+  "homepage": "https://github.com/iuap-design/ucf-node#readme"
 }

@@ -1,6 +1,24 @@
+const logger = require("./logger");
 
-const logger = require('./logger.js')
+/**
+ * 中间件错误处理
+ * 
+ * @param {any} options 
+ * @returns 
+ */
+module.exports = (options) => {
 
-module.exports = () => {
-    return logger()
+  const loggerMiddleware = logger(options)
+
+  return (ctx, next) => {
+    return loggerMiddleware(ctx, next)
+    .catch((e) => {
+        if (ctx.status < 500) {
+            ctx.status = 500;
+        }
+        ctx.log.error(e.stack);
+        ctx.state.logged = true;
+        ctx.throw(e);
+    });
+  };
 }
