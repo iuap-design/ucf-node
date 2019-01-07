@@ -8,7 +8,7 @@
     "start": "node app/app.js"
   },
   "keywords": [],
-  "author": "yonyou fed",
+  "author": "yonyou iuap fed",
   "license": "ISC",
   "dependencies": {
     "ip": "^1.1.5",
